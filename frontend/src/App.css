@@ -134,7 +134,8 @@ p {
 .authPage .container form .inputTag div svg {
   width: 10%;
   font-size: 1.5rem;
-  background: #2d5649;
+  /* background: #2d5649; */
+  background: #006A71;
   height: 100%;
   padding: 8px;
   color: #fff;
@@ -146,17 +147,17 @@ p {
   margin-top: 25px;
   font-weight: 700;
   color: #fff;
-  background: #2d5649;
+  background: #006A71;
   font-size: 1.2rem;
   border-radius: 7px;
 }
 .authPage .container form a {
   padding: 12px;
   text-align: center;
-  border: 1px solid #2d5649;
+  border: 1px solid #006A71;
   margin-top: 25px;
   font-weight: 700;
-  color: #2d5649;
+  color: #006A71;
   font-size: 1.2rem;
   text-decoration: none;
   border-radius: 7px;
@@ -196,9 +197,9 @@ p {
 }
 
 .footerShow {
-  background: #18191c;
+  background: #006A71;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 30px 120px;
   align-items: center;
 }
@@ -252,6 +253,10 @@ p {
   display: flex;
   height: 450px;
   margin-bottom: 1.75rem;
+}
+.heroSection .image{
+  border-radius: 50%;
+    /* background: #e3e3e2; */
 }
 .heroSection .container .title,
 .heroSection .container .image {
@@ -366,7 +371,7 @@ p {
   }
 }
 .howitworks {
-  background: #f1f3f6;
+  background: #efefef;
 }
 .howitworks .container {
   max-width: 1500px;
@@ -381,10 +386,11 @@ p {
 .howitworks .container .banner {
   display: flex;
   justify-content: space-between;
-  gap: 25px;
+  gap: 60px;
+   transition: transform 0.3s ease;
 }
 .howitworks .container .banner .card {
-  background: #fff;
+  background: #c1c6c6;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -394,9 +400,13 @@ p {
   padding: 30px 50px;
   gap: 12px;
   justify-content: center;
+   font-weight: 700;
+}
+.howitworks .container .banner :hover{
+ transform: scale(1.14);
 }
 .howitworks .container .banner .card:nth-child(2) {
-  background: #18191c;
+  background: #277174;
   color: #fff;
 }
 .howitworks .container .banner .card svg {
@@ -405,7 +415,9 @@ p {
 }
 .howitworks .container .banner .card p:last-child {
   font-size: 14px;
-  color: gray;
+  /* color: gray; */
+    color: rgb(0, 0, 0);
+     font-weight: 450;
 }
 @media (max-width: 1520px) {
   .howitworks .container {
@@ -453,7 +465,7 @@ p {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #f1f3f6;
+  background: #efefef;
 }
 .categories .banner .card:hover {
   transition: all 0.3s;
@@ -500,7 +512,7 @@ p {
 }
 
 .companies {
-  background: #f1f3f6;
+  background: #efefef;
   padding: 50px 0;
 }
 .companies .container {
@@ -514,7 +526,7 @@ p {
 }
 .companies .container .banner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   padding: 20px 0;
 }
@@ -524,7 +536,7 @@ p {
   flex-direction: column;
   background: #fff;
   padding: 20px;
-  gap: 15px;
+  /* gap: 15px; */
 }
 .companies .container .banner .card:hover {
   transition: all 0.3s;
@@ -535,7 +547,7 @@ p {
 .companies .container .banner .card .content {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 59px;
 }
 .companies .container .banner .card .content .icon {
   padding: 10px;
@@ -1151,7 +1163,7 @@ p {
   }
 }
 nav {
-  background: #18191c;
+  background: #006A71;
   padding: 0 20px;
 }
 nav .container {
@@ -1200,13 +1212,15 @@ nav .menu li a {
   position: relative;
 }
 nav .menu li a:hover {
-  color: #2d5649;
+  color: #fef9f9;
+  font-weight: 770;
   transition: all 0.3s;
 }
 nav .menu li a::before {
   content: "";
   position: absolute;
-  background: #184235;
+  /* background: #184235; */
+   background: #dbd9d7;
   height: 1px;
   width: 100%;
   left: -100%;
@@ -1276,13 +1290,13 @@ nav .hamburger {
     -moz-box-shadow: 9px 0px 16px 0px rgba(0, 0, 0, 0.75);
   }
   nav .show-menu li a {
-    color: #184235;
-    font-weight: 600;
+    color: #223952;
+    font-weight: 700;
   }
   nav .show-menu button {
     color: #184235;
     border: 1px solid #184235;
-    font-weight: 600;
+    font-weight: 700;
   }
   nav .show-menu button:hover {
     background: #18191c;
@@ -1351,4 +1365,23 @@ nav .hamburger {
   .resume-modal {
     z-index: 11;
   }
+}
+.learn-link {
+  /* color: #e3e6e8; */
+  color: #5a5c5d;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: large;
+  /* margin: 1rem; */
+  /* padding: 40px; */
+}
+
+.learn-link:hover {
+  text-decoration: underline;
+  color: #2e2a2a;
+  font-size: 17px;
+}
+.learn-link-div{
+  display: flex;
+  justify-content: center;
 }

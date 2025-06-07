@@ -38,14 +38,14 @@ const HeroSection = () => {
             <p>
               Discover job opportunities that match your skills and passions.
               Connect with employers seeking talent like yours for rewarding
-              careers.
+              careers. Grow faster, shine brighter. 🏆🚀
             </p>
           </div>
           <div className="image">
             <img src="/heroS.jpg" alt="hero" />
           </div>
         </div>
-        <div className="details">
+        {/* <div className="details">
           {details.map((element) => {
             return (
               <div className="card" key={element.id}>
@@ -57,7 +57,7 @@ const HeroSection = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -1,29 +1,35 @@
 import React from "react";
 import { FaMicrosoft, FaApple } from "react-icons/fa";
 import { SiTesla } from "react-icons/si";
+import { FaGoogle } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
+import { FaAmazon } from "react-icons/fa";
 
 const PopularCompanies = () => {
   const companies = [
     {
       id: 1,
       title: "Microsoft",
-      location: "Millennium City Centre, Gurugram",
-      openPositions: 10,
+      // location: "Millennium City Centre, Gurugram",
+      // openPositions: 10,
       icon: <FaMicrosoft />,
+        link:"https://www.microsoft.com/en-in/about/contact-us",
     },
     {
       id: 2,
-      title: "Tesla",
-      location: "Millennium City Centre, Gurugram",
-      openPositions: 5,
-      icon: <SiTesla />,
+      title: "Google",
+      // location: "Millennium City Centre, Gurugram",
+      // openPositions: 5,
+       icon: <FaGoogle  />,
+      link:"https://www.google.com/about/careers/applications/jobs/results?location=India",
     },
     {
       id: 3,
-      title: "Apple",
-      location: "Millennium City Centre, Gurugram",
-      openPositions: 20,
-      icon: <FaApple />,
+      title: "Amazon",
+      // location: "Millennium City Centre, Gurugram",
+      // openPositions: 20,
+      icon: <FaAmazon />,
+      link:"https://www.amazon.jobs/content/en/teams/international-stores/india",
     },
   ];
   return (
@@ -38,10 +44,21 @@ const PopularCompanies = () => {
                   <div className="icon">{element.icon}</div>
                   <div className="text">
                     <p>{element.title}</p>
-                    <p>{element.location}</p>
+                    {/* <p>{element.location}</p> */}
                   </div>
                 </div>
-                <button>Open Positions {element.openPositions}</button>
+                {/* <button>Open Positions {element.openPositions}</button> */}
+                <div className="learn-link-div"> <a
+                  href={element.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="learn-link"
+                 
+                >
+              Dive In
+              {/* Visit */}
+                </a>
+                </div>
               </div>
             );
           })}

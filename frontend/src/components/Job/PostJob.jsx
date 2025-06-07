@@ -94,6 +94,8 @@ const PostJob = () => {
                 <option value="Mobile App Development">
                   Mobile App Development
                 </option>
+                 <option value="Data & Analytics">Data & Analytics</option>
+                <option value="Marketing">Marketing</option>
                 <option value="Frontend Web Development">
                   Frontend Web Development
                 </option>
@@ -111,6 +113,7 @@ const PostJob = () => {
                 <option value="MERN Stack Development">
                   MERN STACK Development
                 </option>
+                <option value="Writing & Content">Writing & Content</option>
                 <option value="Data Entry Operator">Data Entry Operator</option>
               </select>
             </div>
